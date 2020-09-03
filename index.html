@@ -14,8 +14,8 @@
 
 <body>
 
-	<h1 id="title">FreeCodeCamp - Survey Form</h1>
-	<p id="description">Short explanation of survey</p>
+	<h1 id="title">Public Transit Survey Form</h1>
+	<p id="description">Survey of riders of public transportation in Southern California</p>
 
 	<form id="survey-form">
 		<label id="name-label" for="name">Name</label>
@@ -24,30 +24,39 @@
 		<label id="email-label" for="email">Email</label>
 		<input id="email" type="email" placeholder="Enter Email" required>
 
-		<label id="number-label" for="number">Number</label>
-		<input id="number" type="number" min="10" max="100" placeholder="Enter No.">
+		<label id="number-label" for="number">Age</label>
+		<input id="number" type="number" min="10" max="130" placeholder="Enter No.">
 
-		<label id="dropdown-label" for="dropdown">Dropdown</label>
+		<label id="dropdown-label" for="dropdown">Your County</label>
 		<select id="dropdown">
 			<option selected disabled value>Select option</option>
-			<option value="Option1">Option 1</option>
-			<option value="Option2">Option 2</option>
-			<option value="Option3">Option 3</option>
+			<option value="Option1">Los Angeles</option>
+			<option value="Option2">Orange County</option>
+			<option value="Option3">San Diego</option>
+			<option value="Option4">Riverside</option>
 		</select>
 
-		<label id="radio-label" for="radio-button">Select option:</label>
+		<label id="radio-label" for="radio-button">Frequency of Public Transit Use:</label>
 		<input id="radio-option-1" type="radio" name="radio-button" value="radio1">
-		<label for="radio-option-1">Option 1</label>
+		<label for="radio-option-1">Always - All trips</label>
 		<input id="radio-option-2" type="radio" name="radio-button" value="radio2">
-		<label for="radio-option-2">Option 2</label>
+		<label for="radio-option-2">Often - Majority of trips</label>
+		<input id="radio-option-3" type="radio" name="radio-button" value="radio3">
+		<label for="radio-option-3">Occasionally - Some portion of trips</label>
+		<input id="radio-option-4" type="radio" name="radio-button" value="radio4">
+		<label for="radio-option-4">Never - No trips</label>
 
-		<label id="checkbox-label" for="checkbox-button">Select option:</label>
+		<label id="checkbox-label" for="checkbox-button">Types of Transit Use (select as many as used):</label>
 		<input id="checkbox-1" type="checkbox" name="checkbox-button" value="check1">
-		<label for="checkbox-1">Option 1</label>
+		<label for="checkbox-1">Bus</label>
 		<input id ="checkbox-2" type="checkbox" name="checkbox-button" value="check2">
-		<label for="checkbox-2">Option 2</label>
+		<label for="checkbox-2">Train</label>
+		<input id ="checkbox-3" type="checkbox" name="checkbox-button" value="check3">
+		<label for="checkbox-3">Streetcar</label>
+		<input id ="checkbox-4" type="checkbox" name="checkbox-button" value="check4">
+		<label for="checkbox-4">No public transit</label>
 
-		<label for="textbox">Additional comments:</label>
+		<label for="textbox">Any Additional Comments?</label>
 		<textarea id="textbox" name="textbox" rows="5" cols="30"></textarea>
 
 		<button id="submit" type="submit" form="survey-form" value="Submit">Submit</button>
