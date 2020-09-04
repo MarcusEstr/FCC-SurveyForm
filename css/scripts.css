@@ -2,6 +2,10 @@ body {
 	background-color: #034A90;
 }
 
+p, label {
+	font-size: 20px;
+}
+
 #title {
 	font-family: 'Roboto', sans-serif;
 	color: #CADAEA;
@@ -36,4 +40,9 @@ button {
 .radio-opt-label {
 	display: flex;
 	padding-top: 10px;
+}
+
+#name, #email, #number, #dropdown, #textbox {
+	width: 100%;
+	height: 30px;
 }
